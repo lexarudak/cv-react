@@ -1,6 +1,7 @@
 @mixin buttonBase {
   transition: .2s;
   padding: 1rem;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
   display: flex;
@@ -34,6 +35,7 @@
 
 @mixin buttonSecondNormal {
   @include buttonBase;
+  width: max-content;
   border-radius: 7px;
   padding: .5rem;
   background-color: transparent;

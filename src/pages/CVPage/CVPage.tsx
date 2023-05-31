@@ -1,6 +1,4 @@
-import { Title, Image } from 'components';
-import { Lang } from 'components/Lang/Lang';
-import { Skills } from 'components/Skills/Skills';
+import { Title, Image, Education, Skills, Lang } from 'components';
 import React from 'react';
 import styles from './styles.module.scss';
 
@@ -11,6 +9,7 @@ export const CVPage = (): JSX.Element => {
       <Title />
       <Skills />
       <Lang />
+      <Education />
     </section>
   );
 };
