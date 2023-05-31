@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { LangSwitcher } from 'components/LangSwitcher/LangSwitcher';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { BUTTON_LIST } from './const';
@@ -20,6 +21,7 @@ export const Header = (): JSX.Element => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>{fillNav}</nav>
+      <LangSwitcher />
     </header>
   );
 };

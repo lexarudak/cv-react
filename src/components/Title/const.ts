@@ -1,3 +1,7 @@
-export const NAME = 'Aliaksei Rudak';
+export const NAMESPACE = 'title';
 
-export const POSITION = 'Frontend Developer';
+export const NAME = 'name';
+
+export const POSITION = 'position';
+
+export const DOWNLOAD = 'download';
