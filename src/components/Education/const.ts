@@ -2,6 +2,13 @@ import { EducationItem } from './type';
 
 export const TITLE = 'education';
 
+const YANDEX: EducationItem = {
+  name: 'Yandex ШРИ',
+  date: 'June 2023 - Present',
+  location: 'Almaty, Kazakhstan',
+  position: 'in progress',
+};
+
 const RS_REACT: EducationItem = {
   name: 'RS School | React',
   date: 'March 2023 - June 2023',
@@ -25,4 +32,4 @@ const ACADEMY: EducationItem = {
   position: 'Telecommunications engineer',
 };
 
-export const EDUCATION_LIST: EducationItem[] = [RS_REACT, RS_JS, ACADEMY];
+export const EDUCATION_LIST: EducationItem[] = [YANDEX, RS_REACT, RS_JS, ACADEMY];

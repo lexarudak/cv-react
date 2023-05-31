@@ -1,0 +1,9 @@
+.container {
+  @include buttonMainActive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  width: 300px;
+  height: 300px;
+}
