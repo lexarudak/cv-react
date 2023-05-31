@@ -1,4 +1,4 @@
-import { Title, Image, Education, Skills, Lang, PortfolioCV } from 'components';
+import { Title, Image, Education, Skills, Lang, PortfolioCV, Summary } from 'components';
 import React from 'react';
 import styles from './styles.module.scss';
 
@@ -11,6 +11,7 @@ export const CVPage = (): JSX.Element => {
       <Lang />
       <PortfolioCV />
       <Education />
+      <Summary />
     </section>
   );
 };
