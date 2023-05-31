@@ -1,5 +1,3 @@
-export const TITLE = 'hard skills';
-
 export const SKILLS_LIST = [
   'React',
   'Next.js 13',

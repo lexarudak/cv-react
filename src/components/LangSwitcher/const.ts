@@ -1,3 +1,6 @@
 export const LANGS = ['en', 'ru'];
 
-export const NAMESPACE = 'base';
+export const LANG_KEYS = {
+  NAMESPACE: 'base',
+  LANG: 'lang',
+};

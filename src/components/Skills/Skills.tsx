@@ -1,5 +1,6 @@
 import React from 'react';
-import { SKILLS_LIST, TITLE } from './const';
+import { useTranslation } from 'react-i18next';
+import { SKILLS_LIST } from './const';
 import styles from './styles.module.scss';
 
 const fillList = (): JSX.Element[] =>
@@ -10,9 +11,11 @@ const fillList = (): JSX.Element[] =>
   ));
 
 export const Skills = (): JSX.Element => {
+  const { t } = useTranslation('skills');
+
   return (
     <section className={styles.container}>
-      <h2 className={styles.title}>{TITLE}</h2>
+      <h2 className={styles.title}>{t('title')}</h2>
       <ul className={styles.list}>{fillList()}</ul>
     </section>
   );
