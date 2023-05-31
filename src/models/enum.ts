@@ -1,5 +1,6 @@
 export const enum RouteList {
-  home = '/',
-  about = '/about',
+  cv = '/',
+  portfolio = '/portfolio',
+  contacts = '/contacts',
   notFound = '/404',
 }

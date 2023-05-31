@@ -1,0 +1,46 @@
+@mixin buttonBase {
+  transition: .2s;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+@mixin buttonMainNormal {
+  @include buttonBase;
+  border-radius: 10px;
+  background-color: transparent;
+  color: $clr-second;
+
+  &:hover {
+    background-color: $clr-base-2;
+  }
+}
+
+@mixin buttonMainActive {
+  @include buttonBase;
+  border-radius: 10px;
+  background-color: $clr-active-2;
+  color: $clr-second;
+
+  &:hover {
+    background-color: $clr-active;
+  }
+}
+
+@mixin buttonRoundNormal {
+  @include buttonBase;
+  border-radius: 100%;
+  background-color: $clr-base;
+  color: $clr-second;
+  width: 35.5px;
+  height: 35.5px;
+
+  &:hover {
+    background-color: $clr-active;
+  }
+}

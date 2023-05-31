@@ -1,5 +1,35 @@
-html {
-  font-family: 'Montserrat', sans-serif;
-  color: $clr-font;
-  background-color: $clr-base;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+html {
+  font-family: 'Fira Sans', sans-serif;
+  color: $clr-second;
+  font-size: $font-normal;
+  background-color: $clr-base;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.body {
+  position: relative;
+  flex-grow: 1;
+  max-width: $body-container;
+  margin: 0px $body-margin;
+  display: flex;
+}
+
+#root {
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
