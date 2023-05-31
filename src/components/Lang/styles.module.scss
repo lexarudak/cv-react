@@ -1,0 +1,22 @@
+.container {
+  padding: $section-padding;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: $section-padding;
+}
+
+.item {
+  margin-top: 1rem;
+}
+
+.lang {
+  display: inline-block;
+  min-width: 120px;
+}
+
+.level {
+  font-weight: 600;
+  color: $clr-active-2;
+}

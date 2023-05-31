@@ -7,7 +7,7 @@ export const Layout = (): JSX.Element => {
   return (
     <>
       <Header />
-      <main className={styles.maim}>
+      <main className={styles.main}>
         <Outlet />
       </main>
     </>

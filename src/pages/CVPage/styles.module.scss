@@ -1,0 +1,7 @@
+.cvPage {
+  width: 100%;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: repeat(3, 1fr);
+}

@@ -1,0 +1,17 @@
+.container {
+  margin-right: 1rem;
+}
+
+.name {
+  font-size: 60px;
+}
+
+.position {
+  text-transform: uppercase;
+  color: $clr-active-2;
+}
+
+.button {
+  @include buttonSecondNormal;
+  margin-top: 40px;
+}

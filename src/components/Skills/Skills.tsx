@@ -1,0 +1,19 @@
+import React from 'react';
+import { SKILLS_LIST, TITLE } from './const';
+import styles from './styles.module.scss';
+
+const fillList = (): JSX.Element[] =>
+  SKILLS_LIST.map((skill, index) => (
+    <li className={styles.skill} key={index}>
+      {skill}
+    </li>
+  ));
+
+export const Skills = (): JSX.Element => {
+  return (
+    <section className={styles.container}>
+      <h2 className={styles.title}>{TITLE}</h2>
+      <ul className={styles.list}>{fillList()}</ul>
+    </section>
+  );
+};

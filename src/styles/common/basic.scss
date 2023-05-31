@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 html {
   font-family: 'Fira Sans', sans-serif;
   color: $clr-second;
