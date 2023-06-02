@@ -1,5 +1,5 @@
 export const CONTACTS_LIST = [
-  ['mailto:lexarudak@gmail.com', 'email', 'lexarudak@gmail.com'],
+  ['mailto:lexarudak2@gmail.com', 'email', 'lexarudak2@gmail.com'],
   ['https://api.whatsapp.com/send?phone=77051500301', 'telephone', '+7 (705) 150 03 01'],
 ];
 

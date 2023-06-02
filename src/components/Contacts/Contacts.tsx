@@ -19,13 +19,12 @@ const fillList = (list: string[][]): JSX.Element[] =>
   ));
 
 export const Contacts = (): JSX.Element => {
-  const { t: tLayout } = useTranslation('layout');
-  const { t: tEd } = useTranslation('education');
+  const { t } = useTranslation('contacts');
 
   return (
     <section className={styles.container}>
-      <h2 className={styles.title}>{tLayout('contacts')}</h2>
-      <p className={styles.location}>{tEd('almaty')}</p>
+      <h2 className={styles.title}>{t('contacts')}</h2>
+      <p className={styles.location}>{t('almaty')}</p>
       <ul className={styles.list}>{fillList(CONTACTS_LIST)}</ul>
       <ul className={styles.buttons}>{fillList(BUTTONS_LIST)}</ul>
     </section>

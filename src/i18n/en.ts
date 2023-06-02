@@ -5,7 +5,6 @@ export const en = {
   layout: {
     cv: 'CV',
     portfolio: 'Portfolio',
-    contacts: 'Contacts',
   },
   title: {
     name: 'Aliaksei Rudak',
@@ -42,7 +41,7 @@ export const en = {
     academyPos: 'Telecommunications engineer',
   },
   work: {
-    title: 'PROFESSIONAL EXPERIENCE',
+    title: 'professional experience',
     minsk: 'Minsk, Belarus',
     datastream: 'Datastream DEP',
     datastreamDate: 'September 2014 - January 2017',
@@ -67,5 +66,8 @@ export const en = {
     facts:
       "<ul><li>I graduated from RS School | JavaScript/Front-end in <active>35th place out of ~11,500 </active>registered users, starting from scratch. I graduated from RS School | React in <active>1st place out of ~550</active> students. This does not characterize my code, but characterizes my purposefulness</li><li>I was a team leader in all school team tasks. Each of these works fell into the list of the best works of the course. <active>I can work in a team and organize people</active></li><li><active>I am 32</active>. This means that I start the project on the day it is issued. I don't panic. I don’t ask every little thing, but I’m not afraid to come up with a question if necessary. I’m an adult and I understand how much this simplifies the work)</li></ul>",
   },
-  q: 's',
+  contacts: {
+    contacts: 'Contacts',
+    almaty: 'Almaty, Kazakhstan',
+  },
 };
