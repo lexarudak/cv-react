@@ -1,0 +1,50 @@
+$body-container: calc(1440px - 2rem);
+$body-margin: 2rem;
+
+$section-padding: 2rem;
+$section-padding-small: 1rem;
+
+@mixin sectionTitleMargin {
+  margin-bottom: $section-padding;
+
+  @include mediaMax('s') {
+    margin-bottom: $section-padding-small;
+  };
+}
+
+@mixin sectionPadding {
+  padding: $section-padding;
+
+  @include mediaMax('s') {
+    padding: $section-padding-small;
+  };
+}
+
+@mixin layoutGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 50px;
+
+  @include mediaMax('xl') {
+    grid-template-columns: repeat(3, 300px);
+  };
+
+  @include mediaMax('l') {
+    grid-template-columns: repeat(2, 300px);
+  };
+
+  @include mediaMax('m') {
+    grid-template-columns: repeat(2, 200px);
+    gap: 30px;
+  };
+
+  @include mediaMax('s') {
+    grid-template-columns: repeat(2, 180px);
+    gap: 20px;
+  }
+
+  @include mediaMax('xs') {
+    gap: 30px;
+    grid-template-columns: 300px;
+  }
+}

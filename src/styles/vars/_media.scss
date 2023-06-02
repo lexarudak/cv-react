@@ -1,0 +1,19 @@
+$breakpoints: (
+  "xs":400px,
+  "s":470px,
+  "m":690px,
+  "l":1040px,
+  "xl":1400px
+);
+
+@mixin mediaMax($media) {
+
+  @each $size,
+  $res in $breakpoints {
+    @if $media ==$size {
+      @media only screen and (max-width: $res) {
+        @content;
+      }
+    }
+  }
+}

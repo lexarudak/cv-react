@@ -1,5 +1,17 @@
+.container {
+  @include mediaMax('xs') {
+    grid-row: 2;
+    grid-column: 1;
+  };
+}
+
 .name {
   font-size: 60px;
+  line-height: 1;
+
+  @include mediaMax('m') {
+    font-size: 38px;
+  };
 }
 
 .position {
@@ -9,5 +21,9 @@
 
 .button {
   @include buttonSecondNormal;
-  margin-top: 40px;
+  margin-top: 38px;
+
+  @include mediaMax('s') {
+    margin-top: 15px;
+  };
 }

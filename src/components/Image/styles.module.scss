@@ -1,3 +1,15 @@
 .img {
   border-radius: 1rem;
+
+  @include mediaMax('m') {
+    width: 200px
+  };
+
+  @include mediaMax('s') {
+    width: 180px
+  };
+
+  @include mediaMax('xs') {
+    width: 300px
+  };
 }

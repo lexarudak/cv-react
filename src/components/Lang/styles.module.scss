@@ -1,11 +1,26 @@
 .container {
-  padding: $section-padding;
+  @include sectionPadding;
   height: max-content;
+
+  @include mediaMax('xl') {
+    grid-column: 1;
+    grid-row: 4;
+  };
+
+  @include mediaMax('l') {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  @include mediaMax('xs') {
+    grid-column: 1;
+    grid-row: 8;
+  };
 }
 
 .title {
   text-transform: uppercase;
-  margin-bottom: $section-padding;
+  @include sectionTitleMargin;
 }
 
 .item {
@@ -15,6 +30,10 @@
 .lang {
   display: inline-block;
   min-width: 120px;
+
+  @include mediaMax('m') {
+    min-width: 95px;
+  }
 }
 
 .level {

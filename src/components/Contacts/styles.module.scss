@@ -1,17 +1,39 @@
 .container {
+  @include sectionPadding;
   background-color: $clr-base-2;
-  padding: $section-padding;
   border-radius: 1rem;
   grid-column: 3;
   grid-row: 5;
-  height: max-content;
   height: 300px;
+
+  @include mediaMax('xl') {
+    grid-column: 3;
+    grid-row: 6;
+    align-self: flex-end
+  };
+
+  @include mediaMax('l') {
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  @include mediaMax('m') {
+    grid-column: 2;
+    grid-row: 10;
+    height: min-content;
+  }
+
+  @include mediaMax('xs') {
+    grid-column: 1;
+    grid-row: 9;
+    height: 300px
+  };
 }
 
 .title {
   text-transform: uppercase;
   color: $clr-active-2;
-  margin-bottom: $section-padding;
+  @include sectionTitleMargin;
 }
 
 .location {

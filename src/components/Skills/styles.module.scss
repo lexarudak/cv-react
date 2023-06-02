@@ -1,16 +1,26 @@
 .container {
   background-color: $clr-base-2;
-  padding: $section-padding;
+  @include sectionPadding;
   border-radius: 1rem;
   grid-column: 3;
   grid-row: 1 / 3;
   height: max-content;
+
+  @include mediaMax('l') {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  };
+
+  @include mediaMax('xs') {
+    grid-column: 1;
+    grid-row: 4;
+  };
 }
 
 .title {
   text-transform: uppercase;
   color: $clr-active-2;
-  margin-bottom: $section-padding;
+  @include sectionTitleMargin;
 }
 
 .skill {

@@ -19,13 +19,17 @@ html {
   justify-content: center;
   min-height: 100%;
   line-height: 1.3;
+  min-width: 320px;
+
+  @include mediaMax('m') {
+    font-size: 14px
+  };
 }
 
 .body {
   position: relative;
   flex-grow: 1;
   max-width: $body-container;
-  padding: 0 $body-margin;
   display: flex;
 }
 
