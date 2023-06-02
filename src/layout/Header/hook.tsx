@@ -1,4 +1,3 @@
-'use client';
 import { PAGE_SCROLL_GAP } from './const';
 import { useEffect, useState } from 'react';
 
