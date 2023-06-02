@@ -4,9 +4,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import { BUTTON_LIST } from './const';
+import { useScrollState } from './hook';
 import styles from './styles.module.scss';
 
 export const Header = (): JSX.Element => {
+  const isScroll = useScrollState();
   const { t } = useTranslation('layout');
   const { pathname } = useLocation();
 
@@ -21,7 +23,7 @@ export const Header = (): JSX.Element => {
   ));
 
   return (
-    <header className={styles.header}>
+    <header className={classNames(styles.header, isScroll && styles.scroll)}>
       <div className={styles.container}>
         <div className={styles.switcher}>
           <LangSwitcher />

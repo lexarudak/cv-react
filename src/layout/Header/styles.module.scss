@@ -1,8 +1,18 @@
 .header {
+  top: 0;
+  left: 0;
   width: 100vw;
   padding: 50px 0;
   display: flex;
   justify-content: center;
+  transition: .2s;
+  background-color: rgba($clr-base, 0.7);
+  position: fixed;
+  backdrop-filter: blur(4px);
+
+  &.scroll {
+    padding: 10px 0;
+  }
 
   @include mediaMax('m') {
     padding: 30px 0;
