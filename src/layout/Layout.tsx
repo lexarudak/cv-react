@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Header } from './Header/Header';
+import { Footer, Header } from 'layout';
 import styles from './styles.module.scss';
 
 export const Layout = (): JSX.Element => {
@@ -10,6 +10,7 @@ export const Layout = (): JSX.Element => {
       <main className={styles.main}>
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 };

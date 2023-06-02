@@ -16,6 +16,8 @@
   border-radius: 8px;
   background-color: transparent;
   color: $clr-second;
+  height: 52px;
+  min-width: 52px;
 
   &:hover {
     background-color: $clr-base-2;
@@ -24,6 +26,8 @@
 
 @mixin buttonMainActive {
   @include buttonBase;
+  height: 52px;
+  min-width: 52px;
   border-radius: 8px;
   background-color: $clr-active-2;
   color: $clr-second;
@@ -40,7 +44,7 @@
   padding: .5rem;
   background-color: transparent;
   color: $clr-active-2;
-  border: 1px solid $clr-active-2;
+  border: 2px solid $clr-active-2;
 
   &:hover {
     border: 1px solid $clr-active;
@@ -50,11 +54,11 @@
 
 @mixin buttonRoundNormal {
   @include buttonBase;
-  border-radius: 100%;
+  border-radius: 8px;
   background-color: $clr-base-2;
   color: $clr-second;
-  width: 51px;
-  height: 51px;
+  height: 52px;
+  width: 52px;
 
   &:hover {
     background-color: $clr-active;

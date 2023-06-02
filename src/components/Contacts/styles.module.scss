@@ -1,0 +1,45 @@
+.container {
+  background-color: $clr-base-2;
+  padding: $section-padding;
+  border-radius: 1rem;
+  grid-column: 3;
+  grid-row: 5;
+  height: max-content;
+  height: 300px;
+}
+
+.title {
+  text-transform: uppercase;
+  color: $clr-active-2;
+  margin-bottom: $section-padding;
+}
+
+.location {
+  margin-bottom: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+a.item {
+  @include linkText;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.img {
+  transition: .2s;
+
+  width: 32px;
+  height: 32px;
+
+    &:hover {
+      transform: scale(.9);
+    }
+}

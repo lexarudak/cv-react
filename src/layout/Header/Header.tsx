@@ -22,8 +22,12 @@ export const Header = (): JSX.Element => {
 
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>{fillNav}</nav>
-      <LangSwitcher />
+      <div className={styles.container}>
+        <div className={styles.switcher}>
+          <LangSwitcher />
+        </div>
+        <nav className={styles.nav}>{fillNav}</nav>
+      </div>
     </header>
   );
 };

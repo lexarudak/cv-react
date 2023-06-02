@@ -1,5 +1,6 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
+import { LANG_COMPONENTS } from './const';
 import styles from './styles.module.scss';
 
 export const Summary = (): JSX.Element => {
@@ -9,7 +10,8 @@ export const Summary = (): JSX.Element => {
     <section className={styles.container}>
       <h2 className={styles.title}>{t('title')}</h2>
       <p className={styles.subtitle}>{t('subtitle')}</p>
-      <p className={styles.body}></p>
+      <Trans t={t} i18nKey={'body'} components={LANG_COMPONENTS} />
+      <Trans t={t} i18nKey={'facts'} components={LANG_COMPONENTS} />
     </section>
   );
 };

@@ -1,15 +1,25 @@
 .header {
-  width: 100%;
+  width: 100vw;
+  padding: 50px 2rem;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 1rem 0;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 50px;
+  justify-items: flex-end;
+}
+
+.switcher {
+  grid-column: 3 / 4;
 }
 
 .nav {
   display: flex;
   gap: 1rem;
-  margin-right: 1rem;
+  grid-column: 4 / 5;
 }
 
 .button {

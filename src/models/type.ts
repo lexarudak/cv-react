@@ -1,7 +1,8 @@
-export type EducationItem = {
+export type ExperienceItem = {
   name: string;
   date: string;
-  position: string;
   location: string;
+  description: string;
   certificateURL?: string;
+  position?: string;
 };

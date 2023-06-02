@@ -10,10 +10,6 @@ li {
   list-style-type: none;
 }
 
-// span, p {
-//   line-height: 1.5;
-// }
-
 html {
   font-family: 'Fira Sans', sans-serif;
   color: $clr-second;
@@ -22,13 +18,14 @@ html {
   display: flex;
   justify-content: center;
   min-height: 100%;
+  line-height: 1.3;
 }
 
 .body {
   position: relative;
   flex-grow: 1;
   max-width: $body-container;
-  margin: 0px $body-margin;
+  padding: 0 $body-margin;
   display: flex;
 }
 

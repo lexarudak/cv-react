@@ -18,6 +18,5 @@
 }
 
 .level {
-  font-weight: 600;
-  color: $clr-active-2;
+  @include activeText;
 }

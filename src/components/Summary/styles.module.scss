@@ -1,5 +1,8 @@
 .container {
   padding: $section-padding;
+  grid-column: 3 / 5;
+  grid-row: 3 / 5;
+  height: max-content;
 }
 
 .title {
@@ -9,4 +12,20 @@
 .subtitle {
   color: $clr-second-3;
   margin-bottom: $section-padding;
+}
+
+.link {
+  @include linkText;
+}
+
+.activeText {
+  @include activeText;
+}
+
+.list {
+  margin-top: 2rem;
+}
+
+.item {
+  margin-top: 1rem;
 }

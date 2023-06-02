@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { LANG_LIST } from './const';
 import styles from './styles.module.scss';
 
-const fillList = (t: TFunction<'languages', undefined, 'languages'>): JSX.Element[] =>
+const fillList = (t: TFunction): JSX.Element[] =>
   LANG_LIST.map(([lang, level], index) => (
     <li className={styles.item} key={index}>
       <span className={styles.lang}>{t(lang)}</span>

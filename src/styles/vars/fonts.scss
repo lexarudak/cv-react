@@ -1,1 +1,15 @@
 $font-normal: 16px;
+
+@mixin activeText {
+  font-weight: 600;
+  color: $clr-active-2;
+}
+
+@mixin linkText {
+  @include activeText;
+  transition: .2s;
+
+  &:hover {
+    color: $clr-active;
+  }
+}

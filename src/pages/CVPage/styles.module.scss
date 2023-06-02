@@ -1,8 +1,7 @@
 .cvPage {
-  width: 100%;
-  padding: 1rem 0;
+  padding: 0  0 50px 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(5, 300px);
+  gap: 50px;
 }
