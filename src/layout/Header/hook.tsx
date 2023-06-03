@@ -9,11 +9,11 @@ export const useScrollState = (): [boolean, boolean] => {
   useEffect((): (() => void) => {
     const setHeaderFilling = (): void => {
       setIsScroll(window.pageYOffset > PAGE_SCROLL_GAP);
-      if (window.pageYOffset > oldPos.current + PAGE_SCROLL_GAP) {
+      if (window.pageYOffset > oldPos.current) {
         setIsScrollBottom(true);
         oldPos.current = window.pageYOffset;
       }
-      if (window.pageYOffset < oldPos.current) {
+      if (window.pageYOffset + PAGE_SCROLL_GAP < oldPos.current) {
         setIsScrollBottom(false);
         oldPos.current = window.pageYOffset;
       }
