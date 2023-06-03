@@ -8,9 +8,10 @@ import { useScrollState } from './hook';
 import styles from './styles.module.scss';
 
 export const Header = (): JSX.Element => {
-  const isScroll = useScrollState();
+  const [isScroll, isScrollBottom] = useScrollState();
   const { t } = useTranslation('layout');
   const { pathname } = useLocation();
+  console.log(isScrollBottom);
 
   const fillNav = BUTTON_LIST.map(([name, path], index) => (
     <Link
@@ -23,7 +24,13 @@ export const Header = (): JSX.Element => {
   ));
 
   return (
-    <header className={classNames(styles.header, isScroll && styles.scroll)}>
+    <header
+      className={classNames(
+        styles.header,
+        isScroll && styles.scroll,
+        isScrollBottom && isScroll && styles.hide
+      )}
+    >
       <div className={styles.container}>
         <div className={styles.switcher}>
           <LangSwitcher />

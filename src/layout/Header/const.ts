@@ -5,4 +5,4 @@ export const BUTTON_LIST = [
   ['portfolio', RouteList.portfolio],
 ];
 
-export const PAGE_SCROLL_GAP = 50;
+export const PAGE_SCROLL_GAP = 20;

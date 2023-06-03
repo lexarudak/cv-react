@@ -2,24 +2,28 @@
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 50px 0;
+  padding: 50px 0 10px;
   display: flex;
   justify-content: center;
-  transition: .2s;
-  background-color: rgba($clr-base, 0.7);
+  transition: .3s;
   position: fixed;
-  backdrop-filter: blur(4px);
+  background-color: rgba($clr-base, 1);
+
 
   &.scroll {
     padding: 10px 0;
   }
 
+  &.hide {
+    transform: translateY(-100%);
+  }
+
   @include mediaMax('m') {
-    padding: 30px 0;
+    padding: 30px 0 10px;
   };
 
   @include mediaMax('s') {
-    padding: 20px 0;
+    padding: 20px 0 10px;
   };
 
   @include mediaMax('xs') {
