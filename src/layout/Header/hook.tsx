@@ -9,8 +9,14 @@ export const useScrollState = (): [boolean, boolean] => {
   useEffect((): (() => void) => {
     const setHeaderFilling = (): void => {
       setIsScroll(window.pageYOffset > PAGE_SCROLL_GAP);
-      setIsScrollBottom(window.pageYOffset > oldPos.current);
-      oldPos.current = window.pageYOffset;
+      if (window.pageYOffset > oldPos.current + PAGE_SCROLL_GAP) {
+        setIsScrollBottom(true);
+        oldPos.current = window.pageYOffset;
+      }
+      if (window.pageYOffset + PAGE_SCROLL_GAP - 1 < oldPos.current) {
+        setIsScrollBottom(false);
+        oldPos.current = window.pageYOffset;
+      }
     };
     setHeaderFilling();
     window.addEventListener('scroll', setHeaderFilling);
