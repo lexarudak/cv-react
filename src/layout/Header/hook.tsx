@@ -13,7 +13,7 @@ export const useScrollState = (): [boolean, boolean] => {
         setIsScrollBottom(true);
         oldPos.current = window.pageYOffset;
       }
-      if (window.pageYOffset + PAGE_SCROLL_GAP - 1 < oldPos.current) {
+      if (window.pageYOffset < oldPos.current) {
         setIsScrollBottom(false);
         oldPos.current = window.pageYOffset;
       }
