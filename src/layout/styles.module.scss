@@ -2,17 +2,4 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 152px;
-
-  @include mediaMax('m') {
-    margin-top: 112px;
-  };
-
-  @include mediaMax('s') {
-    margin-top: 92px;
-  };
-
-  @include mediaMax('xs') {
-    margin-top: 112px;
-  };
 }
