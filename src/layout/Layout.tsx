@@ -7,7 +7,13 @@ export const Layout = (): JSX.Element => {
   return (
     <>
       <Header />
-      <main className={styles.main}>
+      <main
+        className={styles.main}
+        onScroll={(e) => {
+          console.log(e);
+          console.log('ss');
+        }}
+      >
         <Outlet />
       </main>
       <Footer />

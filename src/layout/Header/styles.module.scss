@@ -1,20 +1,29 @@
 .header {
   z-index: 2;
   width: 100vw;
-  padding: 50px 0;
+  padding: 50px 0 10px;
   display: flex;
   justify-content: center;
-  transition: .2s;
+
   background-color: $clr-base;
-  position: relative;
-  transform: translateY(0);
+  transition: .3s;
+  position: fixed;
+
+
+  &.scroll {
+    padding: 10px 0;
+  }
+
+  &.hide {
+    transform: translateY(-100%);
+  }
 
   @include mediaMax('m') {
-    padding: 30px 0;
+    padding: 30px 0 10px;
   };
 
   @include mediaMax('s') {
-    padding: 20px 0;
+    padding: 20px 0 10px;
   };
 
   @include mediaMax('xs') {
