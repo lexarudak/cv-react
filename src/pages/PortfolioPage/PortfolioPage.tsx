@@ -1,5 +1,12 @@
 import React from 'react';
+import styles from './styles.module.scss';
+import { projects } from '../../projects.json';
+import { Project } from 'models';
+import { WorkBlock } from 'components/WorkBlock/WorkBlock';
+
+const fillPage = (projects: Project[]) =>
+  projects.map((project) => <WorkBlock project={project} key={project.id} />);
 
 export const PortfolioPage = (): JSX.Element => {
-  return <>Portfolio Page</>;
+  return <section className={styles.container}>{fillPage(projects)}</section>;
 };

@@ -1,7 +1,7 @@
 .header {
   z-index: 2;
   width: 100vw;
-  padding: 50px 0 10px;
+  padding: 50px 0 0;
   display: flex;
   justify-content: center;
 
@@ -19,15 +19,15 @@
   }
 
   @include mediaMax('m') {
-    padding: 30px 0 10px;
+    padding: 30px 0 0;
   };
 
   @include mediaMax('s') {
-    padding: 20px 0 10px;
+    padding: 20px 0 0;
   };
 
   @include mediaMax('xs') {
-    padding: 30px 0;
+    padding: 30px 0 0;
   };
 }
 

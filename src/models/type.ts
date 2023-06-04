@@ -6,3 +6,15 @@ export type ExperienceItem = {
   certificateURL?: string;
   position?: string;
 };
+
+export type Project = {
+  id: string;
+  photo: string;
+  bgPosition: string;
+  title: string;
+  techStack: string[];
+  description: string;
+  repo: string;
+  deploy: string;
+  task: string;
+};
