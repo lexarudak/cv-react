@@ -88,4 +88,8 @@ export const en = {
       '11': 'My first application. Layout of the page according to the finished layout in Figma.\n\n<dark>Application features:</dark>\nCarousel\nLogin popup\nBurger menu\nResponsive design',
     },
   },
+  notFound: {
+    subtitle: "Looks like this page doesn't exist",
+    text: 'Have you already seen my ',
+  },
 };
