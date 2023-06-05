@@ -12,5 +12,3 @@ export const LANG_COMPONENTS = {
   ul: <ul className={styles.list} />,
   li: <li className={styles.item} />,
 };
-
-export const FACTS_LIST = ['facts.1', 'facts.2'];

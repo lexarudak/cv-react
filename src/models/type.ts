@@ -10,7 +10,6 @@ export type ExperienceItem = {
 export type Project = {
   id: string;
   photo: string;
-  bgPosition: string;
   title: string;
   techStack: string[];
   repo: string;

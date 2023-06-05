@@ -3,9 +3,8 @@
     {
       "id": "2",
       "photo": "url('/img/project_photos/graphiql.webp')",
-      "bgPosition": "center",
       "title": "GraphiQL",
-      "techStack": ["Next.js 13", "Redux toolkit", "TypeScript", "Sass"],
+      "techStack": ["Next.js 13", "Redux toolkit", "i18next", "TypeScript", "Sass"],
       "repo": "https://github.com/lexarudak/graphiql-app",
       "deploy": "https://graphiql-app-mu.vercel.app/en",
       "task": "https://github.com/rolling-scopes-school/tasks/blob/master/react/modules/graphiql.md"
@@ -13,7 +12,6 @@
     {
       "id": "3",
       "photo": "url('/img/project_photos/react_app.webp')",
-      "bgPosition": "left",
       "title": "React App",
       "techStack": ["React", "Redux toolkit", "TypeScript", "Sass", "Vite", "Jest"],
       "repo": "https://github.com/lexarudak/rs-react/pulls",
@@ -23,7 +21,6 @@
     {
       "id": "4",
       "photo": "url('/img/project_photos/routine.webp')",
-      "bgPosition": "right",
       "title": "Routine",
       "techStack": ["TypeScript", "Sass"],
       "repo": "https://github.com/lexarudak/routine/pull/64",
@@ -33,10 +30,8 @@
     {
       "id": "5",
       "photo": "url('/img/project_photos/online_store.webp')",
-      "bgPosition": "left",
       "title": "Online Store",
       "techStack": ["TypeScript", "Sass", "Jest"],
-      
       "repo": "https://github.com/lexarudak/online-store/pull/28",
       "deploy": "https://lexarudak-online-store.netlify.app/catalog?stock=1-65&price=1-100",
       "task": "https://github.com/rolling-scopes-school/tasks/tree/master/tasks/online-store-team"
@@ -44,10 +39,8 @@
     {
       "id": "6",
       "photo": "url('/img/project_photos/songbird.webp')",
-      "bgPosition": "center",
       "title": "Songbird",
-      "techStack": ["JavaScript", "Sass"],
-      
+      "techStack": ["JavaScript", "Sass"], 
       "repo": "https://github.com/lexarudak/songbird/tree/develop",
       "deploy": "https://rolling-scopes-school.github.io/lexarudak-JSFE2022Q3/songbird/index.html",
       "task": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird/songbird-2022q3.md"
@@ -55,10 +48,8 @@
     {
       "id": "7",
       "photo": "url('/img/project_photos/gem_puzzle.webp')",
-      "bgPosition": "center",
       "title": "Gem puzzle",
       "techStack": ["JavaScript", "Sass"],
-      
       "repo": "https://github.com/lexarudak/gem-puzzle/tree/develop",
       "deploy": "https://rolling-scopes-school.github.io/lexarudak-JSFE2022Q3/gem-puzzle/index.html",
       "task": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-1/dom-api/codejam-the-gem-puzzle.md"
@@ -66,10 +57,8 @@
     {
       "id": "8",
       "photo": "url('/img/project_photos/online_zoo.webp')",
-      "bgPosition": "center",
       "title": "Online zoo",
-      "techStack": ["JavaScript", "Sass", "HTML"],
-      
+      "techStack": ["JavaScript", "Sass", "HTML"],  
       "repo": "https://github.com/lexarudak/online-zoo/tree/develop",
       "deploy": "https://rolling-scopes-school.github.io/lexarudak-JSFE2022Q3/online-zoo/pages/donate/donate.html",
       "task": "https://github.com/rolling-scopes-school/tasks/tree/master/stage1/stream2/online-zoo"
@@ -77,10 +66,8 @@
     {
       "id": "9",
       "photo": "url('/img/project_photos/eldritch.webp')",
-      "bgPosition": "center",
       "title": "Eldritch Horror Codejam",
-      "techStack": ["JavaScript", "CSS", "HTML"],
-      
+      "techStack": ["JavaScript", "CSS", "HTML"],      
       "repo": "https://github.com/lexarudak/codejam-eldritch/tree/solve",
       "deploy": "https://lexarudak.github.io/codejam-eldritch/",
       "task": "https://github.com/lexarudak/codejam-eldritch/tree/main"
@@ -88,10 +75,8 @@
     {
       "id": "10",
       "photo": "url('/img/project_photos/momentum.webp')",
-      "bgPosition": "center",
       "title": "Momentum",
-      "techStack": ["JavaScript", "CSS", "HTML"],
-      
+      "techStack": ["JavaScript", "CSS", "HTML"],     
       "repo": "https://github.com/lexarudak/momentum_for_chrome",
       "deploy": "https://lexarudak.github.io/momentum_for_chrome/",
       "task": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/momentum/momentum-stage1.md"
@@ -99,10 +84,8 @@
     {
       "id": "11",
       "photo": "url('/img/project_photos/travel.webp')",
-      "bgPosition": "center",
       "title": "Travel",
-      "techStack": ["JavaScript", "CSS", "HTML"],
-      
+      "techStack": ["JavaScript", "CSS", "HTML"],    
       "repo": "https://github.com/lexarudak/travel_my",
       "deploy": "https://lexarudak.github.io/travel_my/#",
       "task": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/travel/travel.md"

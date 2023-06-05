@@ -1,0 +1,20 @@
+.link {
+  @include linkText;
+}
+
+.activeText {
+  @include activeText;
+}
+
+.list {
+  margin-top: 2rem;
+}
+
+.item {
+  margin-top: 1rem;
+}
+
+.dark {
+  display: block;
+  color: $clr-second-3;
+}

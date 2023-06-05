@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
-import { LANG_COMPONENTS } from './const';
+import { LANG_COMPONENTS } from 'i18n/';
 import styles from './styles.module.scss';
 
 export const Summary = (): JSX.Element => {
