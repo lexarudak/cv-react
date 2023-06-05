@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  gap: 1rem;
+  color: $clr-second-3;
+
+  .link,
+  .name {
+    font-size: 14px;
+    color: $clr-second-3;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+      color: $clr-active-2;
+      text-decoration: underline;
+    }
+  }
+
+  .name {
+    color: $clr-active-2;
+  }
+}

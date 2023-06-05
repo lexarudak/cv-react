@@ -1,5 +1,4 @@
 .container {
-  background-color: $clr-base-2;
   @include sectionPadding;
   border-radius: 1rem;
   grid-column: 3;
@@ -19,7 +18,6 @@
 
 .title {
   text-transform: uppercase;
-  color: $clr-active-2;
   @include sectionTitleMargin;
 }
 

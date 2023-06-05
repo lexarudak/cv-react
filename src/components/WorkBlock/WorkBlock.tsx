@@ -1,25 +1,17 @@
 import { Project } from 'models';
+import { fillTechList } from 'models/helper';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './styles.module.scss';
 
-const fillList = (stack: string[]) =>
-  stack.map((value, index) => (
-    <li className={styles.item} key={index}>
-      {value}
-    </li>
-  ));
-
 export const WorkBlock = ({ project }: { project: Project }): JSX.Element => {
-  const { id, title, techStack } = project;
+  const { title, techStack } = project;
+  const navigate = useNavigate();
+
   return (
-    <div
-      className={styles.container}
-      onClick={() => {
-        console.log(id);
-      }}
-    >
+    <section className={styles.container} onClick={() => navigate(title)}>
       <h2 className={styles.title}>{title}</h2>
-      <ul className={styles.list}>{fillList(techStack)}</ul>
-    </div>
+      <ul className={styles.list}>{fillTechList(techStack)}</ul>
+    </section>
   );
 };

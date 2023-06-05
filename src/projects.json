@@ -2,112 +2,109 @@
   "projects": [
     {
       "id": "2",
-      "photo": "url('./assets/project_photos/react_app.webp')",
-      "bgPosition": "right",
+      "photo": "url('/img/project_photos/graphiql.webp')",
+      "bgPosition": "center",
       "title": "GraphiQL",
       "techStack": ["Next.js 13", "Redux toolkit", "TypeScript", "Sass"],
-      "description": "My first react app. Separate branches have been created to study various React functionality. Due to this, the functionality and style in different branches may differ from the deployment. \n\nApplication features:\n - Hooks\n - React Hook Form\n - Function Components\n - Class Components\n - Uncontrolled Components\n - Controlled Components\n - React testing library",
-      "repo": "https://github.com/lexarudak/rs-react/pulls",
-      "deploy": "https://lexarudak-rs-react.netlify.app/",
-      "task": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules"
+      "repo": "https://github.com/lexarudak/graphiql-app",
+      "deploy": "https://graphiql-app-mu.vercel.app/en",
+      "task": "https://github.com/rolling-scopes-school/tasks/blob/master/react/modules/graphiql.md"
     },
     {
       "id": "3",
-      "photo": "url('./assets/project_photos/react_app.webp')",
-      "bgPosition": "right",
+      "photo": "url('/img/project_photos/react_app.webp')",
+      "bgPosition": "left",
       "title": "React App",
       "techStack": ["React", "Redux toolkit", "TypeScript", "Sass", "Vite", "Jest"],
-      "description": "My first react app. Separate branches have been created to study various React functionality. Due to this, the functionality and style in different branches may differ from the deployment. \n\nApplication features:\n - Hooks\n - React Hook Form\n - Function Components\n - Class Components\n - Uncontrolled Components\n - Controlled Components\n - React testing library",
       "repo": "https://github.com/lexarudak/rs-react/pulls",
       "deploy": "https://lexarudak-rs-react.netlify.app/",
       "task": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules"
     },
     {
       "id": "4",
-      "photo": "url('./assets/project_photos/routine.webp')",
+      "photo": "url('/img/project_photos/routine.webp')",
       "bgPosition": "right",
       "title": "Routine",
       "techStack": ["TypeScript", "Sass"],
-      "description": "Application for the distribution of your time. Done as part of a team. A detailed description and navigation of the application can be found in the open PR. The application is written without the use of libraries and frameworks. \n\nParticipation in the project:\n - Team leader\n - Application idea\n - App design\n - Page of the week\n - Page of the day\n - Registration page\n - plan creating popup",
       "repo": "https://github.com/lexarudak/routine/pull/64",
       "deploy": "https://lexarudak-rsclone.netlify.app/",
       "task": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rsclone/rsclone.md"
     },
     {
       "id": "5",
-      "photo": "url('./assets/project_photos/online_store.webp')",
-      "bgPosition": "right",
+      "photo": "url('/img/project_photos/online_store.webp')",
+      "bgPosition": "left",
       "title": "Online Store",
       "techStack": ["TypeScript", "Sass", "Jest"],
-      "description": "Online store application. Done as part of a team without the use of frameworks and libraries. \n\nParticipation in the project:\n - Team leader\n- Routing\n- Product page\n- Cart Page\n- Purchase checkout popup\n- Responsive design",
+      
       "repo": "https://github.com/lexarudak/online-store/pull/28",
       "deploy": "https://lexarudak-online-store.netlify.app/catalog?stock=1-65&price=1-100",
       "task": "https://github.com/rolling-scopes-school/tasks/tree/master/tasks/online-store-team"
     },
     {
       "id": "6",
-      "photo": "url('./assets/project_photos/songbird.webp')",
+      "photo": "url('/img/project_photos/songbird.webp')",
       "bgPosition": "center",
       "title": "Songbird",
       "techStack": ["JavaScript", "Sass"],
-      "description": "The app is a quiz. It is necessary to guess the bird by its singing. For each incorrect answer, the number of points for a correct answer decreases by 1. You can read more about the rules in the task.\n\nApplication features:\n- Work with many custom audio players\n- Generation of answer cards\n- Responsive design\n- Unique design",
+      
       "repo": "https://github.com/lexarudak/songbird/tree/develop",
       "deploy": "https://rolling-scopes-school.github.io/lexarudak-JSFE2022Q3/songbird/index.html",
       "task": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird/songbird-2022q3.md"
     },
     {
       "id": "7",
-      "photo": "url('./assets/project_photos/gem_puzzle.webp')",
-      "bgPosition": "left",
+      "photo": "url('/img/project_photos/gem_puzzle.webp')",
+      "bgPosition": "center",
       "title": "Gem puzzle",
       "techStack": ["JavaScript", "Sass"],
-      "description": "15 puzzle game. My first application where an empty html file is filled with js.\n\nApplication features:\n- Tiles movement animation\n- Move tiles with click and drag and drop\n- Keeping statistics of winners\n- Only solvable tasks are allowed",
+      
       "repo": "https://github.com/lexarudak/gem-puzzle/tree/develop",
       "deploy": "https://rolling-scopes-school.github.io/lexarudak-JSFE2022Q3/gem-puzzle/index.html",
       "task": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-1/dom-api/codejam-the-gem-puzzle.md"
     },
     {
       "id": "8",
-      "photo": "url('./assets/project_photos/online_zoo.webp')",
+      "photo": "url('/img/project_photos/online_zoo.webp')",
       "bgPosition": "center",
       "title": "Online zoo",
       "techStack": ["JavaScript", "Sass", "HTML"],
-      "description": "Layout of two pages of the site according to the finished layout in Figma. The work was checked using pixel perfect on 4 screen sizes. Responsive design tested on screen sizes between breakpoints.\n\nApplication features:\n- Carousel on homepage\n- Slider with comments on the main page\n- Clicking on a comment opens a popup with it\n- Selecting the donation amount on the 'Donate' page\n- Responsive design",
+      
       "repo": "https://github.com/lexarudak/online-zoo/tree/develop",
       "deploy": "https://rolling-scopes-school.github.io/lexarudak-JSFE2022Q3/online-zoo/pages/donate/donate.html",
       "task": "https://github.com/rolling-scopes-school/tasks/tree/master/stage1/stream2/online-zoo"
     },
     {
       "id": "9",
-      "photo": "url('./assets/project_photos/eldritch.webp')",
+      "photo": "url('/img/project_photos/eldritch.webp')",
       "bgPosition": "center",
       "title": "Eldritch Horror Codejam",
       "techStack": ["JavaScript", "CSS", "HTML"],
-      "description": "Helper for Eldritch Horror game. The application shuffles the deck according to the selected character and difficulty level.\n\nApplication features:\n- Deck mixing algorithm\n- Animation of flipping cards\n- Unique design",
+      
       "repo": "https://github.com/lexarudak/codejam-eldritch/tree/solve",
       "deploy": "https://lexarudak.github.io/codejam-eldritch/",
       "task": "https://github.com/lexarudak/codejam-eldritch/tree/main"
     },
     {
       "id": "10",
-      "photo": "url('./assets/project_photos/momentum.webp')",
+      "photo": "url('/img/project_photos/momentum.webp')",
       "bgPosition": "center",
       "title": "Momentum",
       "techStack": ["JavaScript", "CSS", "HTML"],
-      "description": "An analogue of the extension of the same name for Google Chrome. In the application settings, you can change the source of photos. Some of them may be blocked in your region.\n\nApplication features:\n- Custom player\n- Weather widget\n- Clock widget\n- Ability to hide widgets\n- ToDo list\n- Widget with quotes\n- Set screensavers from 3 sources",
+      
       "repo": "https://github.com/lexarudak/momentum_for_chrome",
       "deploy": "https://lexarudak.github.io/momentum_for_chrome/",
       "task": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/momentum/momentum-stage1.md"
     },
     {
       "id": "11",
-      "photo": "url('./assets/project_photos/travel.webp')",
-      "bgPosition": "left",
+      "photo": "url('/img/project_photos/travel.webp')",
+      "bgPosition": "center",
       "title": "Travel",
       "techStack": ["JavaScript", "CSS", "HTML"],
-      "description": "My first application. Layout of the page according to the finished layout in Figma.\n\nApplication features:\n- Carousel\n- Login popup\n- Burger menu\n- Responsive design",
+      
       "repo": "https://github.com/lexarudak/travel_my",
-      "deploy": "https://lexarudak.github.io/travel_my",
+      "deploy": "https://lexarudak.github.io/travel_my/#",
       "task": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/travel/travel.md"
     }
   ]

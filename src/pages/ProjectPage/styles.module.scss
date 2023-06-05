@@ -1,0 +1,87 @@
+.container {
+  display: grid;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+  grid-template-columns: 4fr 3fr 3fr;
+  @include sectionPadding;
+  gap: 100px;
+}
+
+.title {
+  grid-row: 2;
+  font-size: 100px;
+  width: 0%;
+  text-transform: uppercase;
+  color: $clr-active-2;
+}
+
+.photo {
+  display: flex;
+  cursor: pointer;
+  grid-row: 2;
+  grid-column: 2 / 4;
+  width: 700px;
+  height: 700px;
+  margin-top: -5rem;
+  border-radius: 30px;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+  transition: 1.5s;
+  transform: translateY(5rem);
+  opacity: 0;
+  border: .5px solid $clr-second-3;
+  overflow: hidden;
+
+  &:hover {
+    .photoCover {
+      opacity: .2;
+    }
+  }
+
+  &.active {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  .photoCover {
+    transition: .3s;
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($clr-base, 0.3);
+  }
+}
+
+.list {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.disc {
+  grid-row: 3;
+  grid-column: 1;
+  white-space: pre-line;
+}
+
+.linkList {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.tech {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link {
+  @include linkText;
+}
+
+.activeText {
+  color: clr-second-3;
+}

@@ -16,6 +16,7 @@ export const Header = (): JSX.Element => {
     <Link
       to={path}
       key={index}
+      onClick={() => console.log(path)}
       className={classNames(styles.button, pathname === path && styles.active)}
     >
       {t(name)}

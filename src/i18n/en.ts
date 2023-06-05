@@ -70,4 +70,22 @@ export const en = {
     contacts: 'Contacts',
     almaty: 'Almaty, Kazakhstan',
   },
+  project: {
+    portfolio: 'Portfolio',
+    repo: 'Repo',
+    deploy: 'Deploy',
+    task: 'Task',
+    description: {
+      '2': 'My first react app. Separate branches have been created to study various React functionality. Due to this, the functionality and style in different branches may differ from the deployment. \n\n<dark>Application features:</dark>\nHooks\nReact Hook Form\nFunction Components\nClass Components\nUncontrolled Components\nControlled Components\nReact testing library',
+      '3': 'My first react app. Separate branches have been created to study various React functionality. Due to this, the functionality and style in different branches may differ from the deployment. \n\n<dark>Application features:</dark>\nHooks\nReact Hook Form\nFunction Components\nClass Components\nUncontrolled Components\nControlled Components\nReact testing library',
+      '4': 'Application for the distribution of your time. Done as part of a team. A detailed description and navigation of the application can be found in the open PR. The application is written without the use of libraries and frameworks. \n\n<dark>Participation in the project:</dark>\nTeam leader\nApplication idea\nApp design\nPage of the week\nPage of the day\nRegistration page\nplan creating popup',
+      '5': 'Online store application. Done as part of a team without the use of frameworks and libraries. \n\n<dark>Participation in the project:</dark>\nTeam leader\nRouting\nProduct page\nCart Page\nPurchase checkout popup\nResponsive design',
+      '6': 'The app is a quiz. It is necessary to guess the bird by its singing. For each incorrect answer, the number of points for a correct answer decreases by 1. You can read more about the rules in the task.\n\n<dark>Application features:</dark>\nWork with many custom audio players\nGeneration of answer cards\nResponsive design\nUnique design',
+      '7': '15 puzzle game. My first application where an empty html file is filled with js.\n\n<dark>Application features:</dark>\nTiles movement animation\nMove tiles with click and drag and drop\nKeeping statistics of winners\nOnly solvable tasks are allowed',
+      '8': "Layout of two pages of the site according to the finished layout in Figma. The work was checked using pixel perfect on 4 screen sizes. Responsive design tested on screen sizes between breakpoints.\n\n<dark>Application features:</dark>\nCarousel on homepage\nSlider with comments on the main page\nClicking on a comment opens a popup with it\nSelecting the donation amount on the 'Donate' page\nResponsive design",
+      '9': 'Helper for Eldritch Horror game. The application shuffles the deck according to the selected character and difficulty level.\n\n<dark>Application features:</dark>\nDeck mixing algorithm\nAnimation of flipping cards\nUnique design',
+      '10': 'An analogue of the extension of the same name for Google Chrome. In the application settings, you can change the source of photos. Some of them may be blocked in your region.\n\n<dark>Application features:</dark>\nCustom player\nWeather widget\nClock widget\nAbility to hide widgets\nToDo list\nWidget with quotes\nSet screensavers from 3 sources',
+      '11': 'My first application. Layout of the page according to the finished layout in Figma.\n\n<dark>Application features:</dark>\nCarousel\nLogin popup\nBurger menu\nResponsive design',
+    },
+  },
 };
