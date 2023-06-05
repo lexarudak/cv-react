@@ -13,7 +13,6 @@ export type Project = {
   bgPosition: string;
   title: string;
   techStack: string[];
-  description: string;
   repo: string;
   deploy: string;
   task: string;
