@@ -60,8 +60,7 @@
   background-position: center;
   z-index: 1;
   margin-bottom: 50px;
-  transition: transform 1.5s;
-  transition: border .3s;
+  transition: transform 1.5s, border .3s;
   transform: translateY(5rem);
   opacity: 0;
   border: 2px solid $clr-second-3;

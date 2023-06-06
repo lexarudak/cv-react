@@ -25,6 +25,8 @@ export const ProjectPage = (): JSX.Element => {
   const { t } = useTranslation('project');
   const project = projects.find(({ title }) => title === paramsTitle);
 
+  useEffect(() => window.scrollTo(0, 0), []);
+
   useEffect(() => {
     setIsComponentMount(true);
   }, [setIsComponentMount]);
