@@ -60,10 +60,11 @@
   background-position: center;
   z-index: 1;
   margin-bottom: 50px;
-  transition: 1.5s;
+  transition: transform 1.5s;
+  transition: border .3s;
   transform: translateY(5rem);
   opacity: 0;
-  border: .5px solid $clr-second-3;
+  border: 2px solid $clr-second-3;
   overflow: hidden;
 
   @include mediaMax('xl') {
@@ -93,9 +94,10 @@
   };
 
   &:hover {
-    .photoCover {
-      background: rgba($clr-base, 0.1);
-    }
+    border: 2px solid $clr-active;
+    // .photoCover {
+    //   background: rgba($clr-base, 0.1);
+    // }
   }
 
   &.active {
