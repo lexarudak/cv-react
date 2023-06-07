@@ -3,7 +3,7 @@
   border-radius: 1rem;
   width: 300px;
   height: 300px;
-  opacity: 0;
+  background-color: $clr-base-2;
 
   @include mediaMax('m') {
     width: 200px;
@@ -19,8 +19,4 @@
     width: 300px;
     height: 300px;
   };
-
-  &.active {
-    opacity: 1;
-  }
 }
