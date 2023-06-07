@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": "2",
-      "photo": "url('/img/project_photos/graphiql.webp')",
+      "photo": "/img/project_photos/graphiql.webp",
       "title": "GraphiQL",
       "techStack": ["Next.js 13", "Redux toolkit", "i18next", "TypeScript", "Sass"],
       "repo": "https://github.com/lexarudak/graphiql-app",
@@ -11,7 +11,7 @@
     },
     {
       "id": "3",
-      "photo": "url('/img/project_photos/react_app.webp')",
+      "photo": "/img/project_photos/react_app.webp",
       "title": "React App",
       "techStack": ["React", "Redux toolkit", "TypeScript", "Sass", "Vite", "Jest"],
       "repo": "https://github.com/lexarudak/rs-react/pulls",
@@ -20,7 +20,7 @@
     },
     {
       "id": "4",
-      "photo": "url('/img/project_photos/routine.webp')",
+      "photo": "/img/project_photos/routine.webp",
       "title": "Routine",
       "techStack": ["TypeScript", "Sass"],
       "repo": "https://github.com/lexarudak/routine/pull/64",
@@ -29,7 +29,7 @@
     },
     {
       "id": "5",
-      "photo": "url('/img/project_photos/online_store.webp')",
+      "photo": "/img/project_photos/online_store.webp",
       "title": "Online Store",
       "techStack": ["TypeScript", "Sass", "Jest"],
       "repo": "https://github.com/lexarudak/online-store/pull/28",
@@ -38,7 +38,7 @@
     },
     {
       "id": "6",
-      "photo": "url('/img/project_photos/songbird.webp')",
+      "photo": "/img/project_photos/songbird.webp",
       "title": "Songbird",
       "techStack": ["JavaScript", "Sass"], 
       "repo": "https://github.com/lexarudak/songbird/tree/develop",
@@ -47,7 +47,7 @@
     },
     {
       "id": "7",
-      "photo": "url('/img/project_photos/gem_puzzle.webp')",
+      "photo": "/img/project_photos/gem_puzzle.webp",
       "title": "Gem puzzle",
       "techStack": ["JavaScript", "Sass"],
       "repo": "https://github.com/lexarudak/gem-puzzle/tree/develop",
@@ -56,7 +56,7 @@
     },
     {
       "id": "8",
-      "photo": "url('/img/project_photos/online_zoo.webp')",
+      "photo": "/img/project_photos/online_zoo.webp",
       "title": "Online zoo",
       "techStack": ["JavaScript", "Sass", "HTML"],  
       "repo": "https://github.com/lexarudak/online-zoo/tree/develop",
@@ -65,7 +65,7 @@
     },
     {
       "id": "9",
-      "photo": "url('/img/project_photos/eldritch.webp')",
+      "photo": "/img/project_photos/eldritch.webp",
       "title": "Eldritch Horror Codejam",
       "techStack": ["JavaScript", "CSS", "HTML"],      
       "repo": "https://github.com/lexarudak/codejam-eldritch/tree/solve",
@@ -74,7 +74,7 @@
     },
     {
       "id": "10",
-      "photo": "url('/img/project_photos/momentum.webp')",
+      "photo": "/img/project_photos/momentum.webp",
       "title": "Momentum",
       "techStack": ["JavaScript", "CSS", "HTML"],     
       "repo": "https://github.com/lexarudak/momentum_for_chrome",
@@ -83,7 +83,7 @@
     },
     {
       "id": "11",
-      "photo": "url('/img/project_photos/travel.webp')",
+      "photo": "/img/project_photos/travel.webp",
       "title": "Travel",
       "techStack": ["JavaScript", "CSS", "HTML"],    
       "repo": "https://github.com/lexarudak/travel_my",

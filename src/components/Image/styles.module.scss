@@ -1,15 +1,26 @@
 .img {
+  transition: .1s;
   border-radius: 1rem;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
 
   @include mediaMax('m') {
-    width: 200px
+    width: 200px;
+    height: 200px;
   };
 
   @include mediaMax('s') {
-    width: 180px
+    width: 180px;
+    height: 180px;
   };
 
   @include mediaMax('xs') {
-    width: 300px
+    width: 300px;
+    height: 300px;
   };
+
+  &.active {
+    opacity: 1;
+  }
 }

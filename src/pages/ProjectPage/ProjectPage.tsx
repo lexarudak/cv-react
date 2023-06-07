@@ -20,16 +20,12 @@ const fillLinkList = (list: string[][], t: TFunction) =>
   ));
 
 export const ProjectPage = (): JSX.Element => {
-  const [isComponentMount, setIsComponentMount] = useState(false);
+  const [isImgLoad, setIsImgLoad] = useState(false);
   const { title: paramsTitle } = useParams();
   const { t } = useTranslation('project');
   const project = projects.find(({ title }) => title === paramsTitle);
 
   useEffect(() => window.scrollTo(0, 0), []);
-
-  useEffect(() => {
-    setIsComponentMount(true);
-  }, [setIsComponentMount]);
 
   if (!project) return <NotFoundPage />;
 
@@ -46,13 +42,17 @@ export const ProjectPage = (): JSX.Element => {
         <ProjectNav name={title} />
         <h1 className={styles.title}>{title}</h1>
         <a
+          className={classNames(styles.photo, isImgLoad && styles.active)}
           href={deploy}
           target="_blank"
-          className={classNames(styles.photo, isComponentMount && styles.active)}
-          style={{ backgroundImage: photo }}
           rel="noreferrer"
         >
-          <div className={styles.photoCover} />
+          <img
+            className={classNames(styles.img)}
+            src={photo}
+            alt={title}
+            onLoad={() => setIsImgLoad(true)}
+          />
         </a>
         <ul className={styles.list}>{fillTechList(techStack, styles.tech)}</ul>
         <p className={styles.disc}>
