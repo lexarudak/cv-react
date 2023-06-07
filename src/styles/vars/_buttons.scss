@@ -1,23 +1,26 @@
 @mixin buttonBase {
-  transition: .2s;
-  padding: 1rem;
-  font-size: 1rem;
-  border: none;
   cursor: pointer;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   text-decoration: none;
+
+  transition: .2s;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+
+
+  height: $minButtonSize;
+  min-width: $minButtonSize;
 }
 
 @mixin buttonMainNormal {
   @include buttonBase;
-  border-radius: 8px;
   background-color: transparent;
   color: $clr-second;
-  height: 52px;
-  min-width: 52px;
 
   &:hover {
     background-color: $clr-base-2;
@@ -26,9 +29,6 @@
 
 @mixin buttonMainActive {
   @include buttonBase;
-  height: 52px;
-  min-width: 52px;
-  border-radius: 8px;
   background-color: $clr-active-2;
   color: $clr-second;
 
@@ -39,26 +39,26 @@
 
 @mixin buttonSecondNormal {
   @include buttonBase;
-  width: max-content;
-  border-radius: 7px;
   padding: .5rem;
   background-color: transparent;
   color: $clr-active-2;
   border: 2px solid $clr-active-2;
 
+  height: auto;
+  width: max-content;
+
   &:hover {
-    border: 2px solid $clr-active;
+    border-color: $clr-active;
     color: $clr-active;
   }
 }
 
 @mixin buttonRoundNormal {
   @include buttonBase;
-  border-radius: 8px;
   background-color: $clr-base-2;
   color: $clr-second;
-  height: 52px;
-  width: 52px;
+
+  width: $minButtonSize;
 
   &:hover {
     background-color: $clr-active;

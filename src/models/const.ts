@@ -1,3 +1,4 @@
+import { Href } from './enum';
 import { ExperienceItem } from './type';
 
 const YANDEX: ExperienceItem = {
@@ -12,7 +13,7 @@ const RS_REACT: ExperienceItem = {
   date: 'rsReactDate',
   location: 'almaty',
   description: 'rsReactPos',
-  certificateURL: 'https://app.rs.school/certificate/aubp6e79',
+  certificateURL: Href.certReact,
 };
 
 const RS_JS: ExperienceItem = {
@@ -20,7 +21,15 @@ const RS_JS: ExperienceItem = {
   date: 'rsJsDate',
   location: 'almaty',
   description: 'rsJsPos',
-  certificateURL: 'https://app.rs.school/certificate/aubp6e79',
+  certificateURL: Href.certJs,
+};
+
+const RS_PRE: ExperienceItem = {
+  name: 'rsPre',
+  date: 'rsPreDate',
+  location: 'almaty',
+  description: 'rsPrePos',
+  certificateURL: Href.certPre,
 };
 
 const ACADEMY: ExperienceItem = {
@@ -54,6 +63,25 @@ const DAR_ELECTRO: ExperienceItem = {
   position: 'darElectroPos',
 };
 
-export const EDUCATION_LIST: ExperienceItem[] = [YANDEX, RS_REACT, RS_JS, ACADEMY];
+export const EDUCATION_LIST: ExperienceItem[] = [YANDEX, RS_REACT, RS_JS, RS_PRE, ACADEMY];
 
 export const WORK_LIST: ExperienceItem[] = [DAR_ELECTRO, MESTO_GDE_SVET, DATASTREAM];
+
+export const LANGS = ['en', 'ru'];
+
+export const SKILLS_LIST = [
+  'React',
+  'Next.js 13',
+  'TypeScript',
+  'JavaScript',
+  'Redux toolkit',
+  'i18next',
+  'REST Api / GraphQL',
+  'Webpack / ESLint',
+  'Vite',
+  'Jest',
+  'Git / GitHub',
+  'HTML',
+  'CSS / Sass',
+  'Figma',
+];

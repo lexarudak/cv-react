@@ -35,6 +35,9 @@ export const en = {
     rsJs: 'RS School | JavaScript/Front-end',
     rsJsDate: 'September 2022 - March 2023',
     rsJsPos: 'Position: 35',
+    rsPre: 'RS School | JS/FE Pre-School',
+    rsPreDate: 'June 2022 - September 2022',
+    rsPrePos: 'Position: 112',
     academy: 'Belarusian State Academy of Communications',
     academyDate: 'September 2007 - June 2014',
     minsk: 'Minsk, Belarus',
@@ -62,9 +65,9 @@ export const en = {
   summary: {
     title: 'summary',
     subtitle: 'or why you should hire me',
-    body: '"Writing about music is like dancing about architecture". So you can see my hard skills in my <portfolio>portfolio</portfolio>, <github>github</github> and <codewars>codewars\u00A0account</codewars>. What about soft skills and motivation? Here are a few facts that I think are the most revealing:',
+    body: '"Writing about music is like dancing about architecture". So you can see my hard skills in my <portfolio>portfolio</portfolio>, <github>github</github> and <codewars>codewars\u00A0account</codewars>. What about soft skills and motivation? I believe that certain facts and experiences stand out as the most relevant:',
     facts:
-      '<ul><li>I graduated from RS School | JavaScript/Front-end in <active>35th place out of ~11,500 </active>registered users, starting from scratch. I graduated from RS School | React in <active>1st place out of ~550</active> students. This does not characterize my code, but characterizes my purposefulness</li><li>I was a team leader in all school team tasks. Each of these works fell into the list of the best works of the course. <active>I can work in a team and organize people</active></li><active>I have many different experiences</active>. This wording may sound a little wrong, but the essence is accurate. I have worked for a large company, for a small company, and I have been a store owner. It does not help to write code, but it helps to formulate the task, decompose it into parts, determine the order of their execution, etc.</li></ul>',
+      '<ul><li>I graduated from RS School | JavaScript/Front-end in <active>35th place out of ~11,500 </active>registered users, starting from scratch. I graduated from RS School | React in <active>1st place out of ~550</active> students. This does not characterize my code, but characterizes my purposefulness</li><li>I was a team leader in all school team tasks. Each of these works fell into the list of the best works of the course. <active>I can work in a team and organize people</active></li><li><active>I have many different experiences</active>. This wording may sound a little wrong, but the essence is accurate. I have worked for a large company, for a small company, and I have been a store owner. It does not help to write code, but it helps to formulate the task, decompose it into parts, determine the order of their execution, etc.</li></ul>',
   },
   contacts: {
     contacts: 'Contacts',

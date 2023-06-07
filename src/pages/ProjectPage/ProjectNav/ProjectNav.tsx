@@ -11,8 +11,7 @@ export const ProjectNav = ({ name }: { name: string }): JSX.Element => {
       <Link to={RouteList.portfolio} className={styles.link}>
         {t('portfolio')}
       </Link>
-      <span>/</span>
-      <span className={styles.name}>{name}</span>
+      /<span className={styles.name}>{name}</span>
     </nav>
   );
 };

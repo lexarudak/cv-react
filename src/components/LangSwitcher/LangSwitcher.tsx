@@ -1,6 +1,6 @@
+import { LANGS } from 'models';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { LANGS } from './const';
 import styles from './styles.module.scss';
 
 export const LangSwitcher = (): JSX.Element => {

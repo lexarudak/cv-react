@@ -1,3 +1,5 @@
-export const SRC = '/img/aliakei_rudak.webp';
+import { ImgPath } from 'models';
 
-export const ALT = 'Aliakei Rudak photo';
+export const SRC = ImgPath.rudak;
+
+export const ALT = 'Aliaksei Rudak photo';

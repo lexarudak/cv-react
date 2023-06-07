@@ -2,31 +2,41 @@
   @include sectionPadding;
   background-color: $clr-base-2;
   border-radius: 1rem;
-  grid-column: 3;
-  grid-row: 5;
+  
   height: 300px;
+  grid-row: 5;
+  grid-column: 3;
+
 
   @include mediaMax('xl') {
-    grid-column: 3;
+    align-self: flex-end;
+
     grid-row: 6;
-    align-self: flex-end
+    grid-column: 3;
   };
 
   @include mediaMax('l') {
-    grid-column: 1;
     grid-row: 8;
+    grid-column: 1;
   }
 
   @include mediaMax('m') {
-    grid-column: 2;
+    justify-self: end;
+
+    width: 250px;
+    height: 250px;
     grid-row: 10;
-    height: min-content;
+    grid-column: 2;
+  }
+
+  @include mediaMax('s') {
+    width: 200px;
+    height: 200px;
   }
 
   @include mediaMax('xs') {
-    grid-column: 1;
     grid-row: 9;
-    height: 300px
+    grid-column: 1;
   };
 }
 

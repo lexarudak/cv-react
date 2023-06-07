@@ -11,18 +11,18 @@ li {
 }
 
 html {
-  font-family: 'Fira Sans', sans-serif;
-  color: $clr-second;
-  font-size: $font-normal;
-  background-color: $clr-base;
   display: flex;
   justify-content: center;
   min-height: 100%;
   line-height: 1.3;
   min-width: 320px;
+  font-family: 'Fira Sans', sans-serif;
+  color: $clr-second;
+  font-size: $font-desktop;
+  background-color: $clr-base;
 
   @include mediaMax('m') {
-    font-size: 14px
+    font-size: $font-mobile;
   };
 }
 

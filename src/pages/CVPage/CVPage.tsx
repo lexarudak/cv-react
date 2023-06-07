@@ -1,17 +1,14 @@
-import { Experience, Image, Lang, PortfolioCV, Skills, Summary, Title } from 'components';
-import { Contacts } from 'components/Contacts/Contacts';
+import { Experience, Image, Lang, PortfolioCV, Skills, Summary, Title, Contacts } from 'components';
 import { EDUCATION_LIST, ExperienceType, WORK_LIST } from 'models';
-import React, { Suspense, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import styles from './styles.module.scss';
 
 export const CVPage = (): JSX.Element => {
   useEffect(() => window.scrollTo(0, 0), []);
 
   return (
-    <section className={styles.cvPage}>
-      <Suspense fallback={'ddd'}>
-        <Image />
-      </Suspense>
+    <section className={styles.container}>
+      <Image />
       <Title />
       <Skills />
       <Lang />

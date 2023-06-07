@@ -1,0 +1,17 @@
+.container {
+  @include sectionPadding;
+  @include basicSquare;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: .3s;
+
+  &:hover {
+    background-color: $clr-base-2;
+  }
+
+}
+
+.title {
+  @include activeTitle;
+  @include sectionTitleMargin;
+}

@@ -1,4 +1,10 @@
-$font-normal: 16px;
+$font-desktop: 16px;
+$font-mobile: 14px;
+
+@mixin activeTitle {
+  text-transform: uppercase;
+  color: $clr-active-2;
+}
 
 @mixin activeText {
   font-weight: 600;

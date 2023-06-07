@@ -1,5 +1,6 @@
 .container {
   @include sectionPadding;
+
   height: max-content;
 
   @include mediaMax('xl') {
@@ -19,8 +20,8 @@
 }
 
 .title {
-  text-transform: uppercase;
   @include sectionTitleMargin;
+  text-transform: uppercase;
 }
 
 .item {

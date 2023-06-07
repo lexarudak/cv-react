@@ -1,32 +1,22 @@
 .container {
   @include buttonMainActive;
+  @include basicSquare;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 1rem;
-  height: 300px;
 
   @include mediaMax('xl') {
-    grid-column: 3;
     grid-row: 3;
+    grid-column: 3;
   }
 
   @include mediaMax('l') {
-    grid-column: 2;
     grid-row: 2;
+    grid-column: 2;
   }
 
-  @include mediaMax('m') {
-    height: 200px;
-  };
-
-  @include mediaMax('s') {
-    height: 180px;
-  };
-
   @include mediaMax('xs') {
-    height: 300px;
-    grid-column: 1;
     grid-row: 3;
+    grid-column: 1;
   };
 }

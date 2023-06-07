@@ -30,7 +30,7 @@ export const ProjectPage = (): JSX.Element => {
   if (!project) return <NotFoundPage />;
 
   const { title, techStack, photo, id, repo, deploy, task } = project;
-  const LINK_LIST = [
+  const linkList = [
     [repo, 'repo'],
     [deploy, 'deploy'],
     [task, 'task'],
@@ -58,7 +58,7 @@ export const ProjectPage = (): JSX.Element => {
         <p className={styles.disc}>
           <Trans t={t} i18nKey={`description.${id}`} components={LANG_COMPONENTS} />
         </p>
-        <ul className={styles.linkList}>{fillLinkList(LINK_LIST, t)}</ul>
+        <ul className={styles.linkList}>{fillLinkList(linkList, t)}</ul>
       </section>
     </>
   );

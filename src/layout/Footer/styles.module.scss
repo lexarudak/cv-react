@@ -1,14 +1,15 @@
 .footer {
-  width: 100vw;
   background-color: $clr-base-2;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
   padding: 5px;
+  gap: 15px;
+
+  width: 100vw;
 
   .item {
     color: $clr-second-3;
-    font-size: 14px;
+    font-size: $font-mobile;
   }
 }

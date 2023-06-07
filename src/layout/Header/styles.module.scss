@@ -1,14 +1,13 @@
 .header {
   z-index: 100;
-  width: 100vw;
-  padding: 50px 0 0;
+  position: fixed;
   display: flex;
   justify-content: center;
-
+  padding: $gap-l 0 0;
   background-color: $clr-base;
   transition: .3s;
-  position: fixed;
 
+  width: 100%;
 
   &.scroll {
     padding: 10px 0;
@@ -19,15 +18,15 @@
   }
 
   @include mediaMax('m') {
-    padding: 30px 0 0;
+    padding: $gap-m 0 0;
   };
 
   @include mediaMax('s') {
-    padding: 20px 0 0;
+    padding: $gap-s 0 0;
   };
 
   @include mediaMax('xs') {
-    padding: 30px 0 0;
+    padding: $gap-m 0 0;
   };
 }
 
@@ -37,8 +36,9 @@
 
   @include mediaMax('xs') {
     display: flex;
-    width: 300px;
     gap: 1rem;
+
+    width: $square-l;
   };
 }
 

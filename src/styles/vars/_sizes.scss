@@ -4,12 +4,27 @@ $body-margin: 2rem;
 $section-padding: 2rem;
 $section-padding-small: 1rem;
 
+$square-l: 300px;
+$square-m: 200px;
+$square-s: 180px;
+
+$gap-l: 50px;
+$gap-m: 30px;
+$gap-s: 20px;
+
+$minButtonSize: 52px;
+
+
 @mixin sectionTitleMargin {
   margin-bottom: $section-padding;
 
   @include mediaMax('s') {
     margin-bottom: $section-padding-small;
   };
+}
+
+@mixin pagePadding {
+  padding: 0 0 50px 0;
 }
 
 @mixin sectionPadding {
@@ -22,29 +37,51 @@ $section-padding-small: 1rem;
 
 @mixin layoutGrid {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
-  gap: 50px;
+  grid-template-columns: repeat(4, $square-l);
+  gap: $gap-l;
 
   @include mediaMax('xl') {
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, $square-l);
   };
 
   @include mediaMax('l') {
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, $square-l);
   };
 
   @include mediaMax('m') {
-    grid-template-columns: repeat(2, 200px);
-    gap: 30px;
+    grid-template-columns: repeat(2, $square-m);
+    gap: $gap-m;
   };
 
   @include mediaMax('s') {
-    grid-template-columns: repeat(2, 180px);
-    gap: 20px;
+    grid-template-columns: repeat(2, $square-s);
+    gap: $gap-s;
   }
 
   @include mediaMax('xs') {
-    gap: 30px;
-    grid-template-columns: 300px;
+    gap: $gap-m;
+    grid-template-columns: $square-l;
   }
+}
+
+@mixin basicSquare {
+  border-radius: 1rem;
+
+  width: $square-l;
+  height: $square-l;
+
+  @include mediaMax('m') {
+    width: $square-m;
+    height: $square-m;
+  };
+
+  @include mediaMax('s') {
+    width: $square-s;
+    height: $square-s;
+  };
+
+  @include mediaMax('xs') {
+    width: $square-l;
+    height: $square-l;
+  };
 }

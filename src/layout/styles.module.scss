@@ -1,9 +1,10 @@
 .main {
-  width: 100%;
-  display: flex;
   flex-grow: 1;
+  display: flex;
   justify-content: center;
   margin-top: 152px;
+
+  width: 100%;
 
   @include mediaMax('m') {
     margin-top: 112px;

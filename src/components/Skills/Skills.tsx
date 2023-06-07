@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { SKILLS_LIST } from './const';
+import { SKILLS_LIST } from 'models';
 import styles from './styles.module.scss';
 
 const fillList = (): JSX.Element[] =>

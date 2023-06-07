@@ -1,9 +1,11 @@
+import { ContactsList, Href, IconsPath } from 'models';
+
 export const CONTACTS_LIST = [
-  ['mailto:lexarudak2@gmail.com', 'email', 'lexarudak2@gmail.com'],
-  ['https://api.whatsapp.com/send?phone=77051500301', 'telephone', '+7 (705) 150 03 01'],
+  [Href.mail, 'email', ContactsList.mail],
+  [Href.whatsApp, 'telephone', ContactsList.phone],
 ];
 
 export const BUTTONS_LIST = [
-  ['https://t.me/Mestogdesvet', 'url', '', 'telegram', '/icons/telegram.svg'],
-  ['https://github.com/lexarudak', 'url', '', 'github', '/icons/github.svg'],
+  [Href.telegram, 'url', '', 'telegram', IconsPath.telegram],
+  [Href.github, 'url', '', 'github', IconsPath.github],
 ];

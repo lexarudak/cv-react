@@ -1,12 +1,11 @@
+import { PDFPath, LANGS } from 'models';
 import React from 'react';
-import styles from './styles.module.scss';
 import { useTranslation } from 'react-i18next';
-import { LANGS } from 'components/LangSwitcher/const';
-import { Href } from 'models';
+import styles from './styles.module.scss';
 
 export const Title = (): JSX.Element => {
   const { t, i18n } = useTranslation('title');
-  const [EN, RU] = LANGS;
+  const [EN] = LANGS;
 
   return (
     <section className={styles.container}>
@@ -14,8 +13,8 @@ export const Title = (): JSX.Element => {
       <h2 className={styles.position}>{t('position')}</h2>
       <a
         className={styles.button}
-        download={t('name')}
-        href={i18n.resolvedLanguage === EN ? Href.enCV : Href.enCV}
+        download
+        href={i18n.resolvedLanguage === EN ? PDFPath.enCV : PDFPath.ruCV}
       >
         {t('download')}
       </a>

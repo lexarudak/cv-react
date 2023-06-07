@@ -1,10 +1,9 @@
-import { Project } from 'models';
-import { fillTechList } from 'models/helper';
+import { Project, fillTechList } from 'models';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './styles.module.scss';
 
-export const WorkBlock = ({ project }: { project: Project }): JSX.Element => {
+export const ProjectBlock = ({ project }: { project: Project }): JSX.Element => {
   const { title, techStack } = project;
   const navigate = useNavigate();
 

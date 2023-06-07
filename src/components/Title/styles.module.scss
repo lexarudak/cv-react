@@ -1,4 +1,5 @@
 .container {
+  @include sectionPadding;
   @include mediaMax('xs') {
     grid-row: 2;
     grid-column: 1;
@@ -10,21 +11,29 @@
   line-height: 1;
 
   @include mediaMax('m') {
-    font-size: 38px;
+    font-size: 34px;
   };
 }
 
 .position {
-  margin-top: 5px;
-  text-transform: uppercase;
-  color: $clr-active-2;
+  @include activeTitle;
+  margin-top: 15px;
+
+  @include mediaMax('m') {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  };
 }
 
 .button {
   @include buttonSecondNormal;
-  margin-top: 32px;
+  margin-top: 30px;
+
+  @include mediaMax('m') {
+    margin-top: 18px;
+  };
 
   @include mediaMax('s') {
-    margin-top: 10px;
+    margin-top: 12px;
   };
 }
