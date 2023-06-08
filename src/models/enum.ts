@@ -17,7 +17,7 @@ export const enum Href {
   telegram = 'https://t.me/Mestogdesvet',
   whatsApp = 'https://api.whatsapp.com/send?phone=77051500301',
   mail = 'mailto:lexarudak2@gmail.com',
-  certReact = 'https://app.rs.school/certificate/aubp6e79',
+  certReact = 'https://app.rs.school/certificate/bkled10e',
   certJs = 'https://app.rs.school/certificate/aubp6e79',
   certPre = 'https://app.rs.school/certificate/6yaeqs17',
 }
