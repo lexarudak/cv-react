@@ -35,6 +35,14 @@ $minButtonSize: 52px;
   };
 }
 
+@mixin sectionVerticalPadding {
+  padding: $section-padding 0;
+
+  @include mediaMax('s') {
+    padding: $section-padding-small 0;
+  };
+}
+
 @mixin layoutGrid {
   display: grid;
   grid-template-columns: repeat(4, $square-l);

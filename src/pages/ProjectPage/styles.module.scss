@@ -1,14 +1,13 @@
 .container {
-  @include sectionPadding;
+  @include sectionVerticalPadding;
   @include layoutGrid;
-  width: 100%;
-  gap: 100px;
-  grid-template-columns: 4fr 3fr 3fr;
+  // width: min-content;
 
-  @include mediaMax('xl') {
-    width: min-content;
+  @include mediaMin('xl') {
+    @include sectionPadding;
+    grid-template-columns: 4fr 3fr 3fr;
     gap: 50px;
-  };
+  }
 }
 
 .title {
@@ -82,6 +81,12 @@
     width: 300px;
     height: 300px;
   };
+
+  @include mediaMax('xs') {
+    margin: 0;
+    grid-row: 3;
+    grid-column: 1 / 2;
+  };
 }
 
 .img {
@@ -100,6 +105,11 @@
   @include mediaMax('l') {
     grid-row: 5
   };
+
+  @include mediaMax('xs') {
+    grid-column: 1;
+    grid-row: 5;
+  };
 }
 
 .disc {
@@ -111,6 +121,11 @@
   @include mediaMax('l') {
     grid-row: 5 / 7;
   };
+
+  @include mediaMax('xs') {
+    grid-row: 6 / 8;
+  };
+  
 }
 
 .linkList {
@@ -120,6 +135,11 @@
   @include mediaMax('l') {
     grid-column: 2;
     grid-row: 6;
+  };
+
+  @include mediaMax('xs') {
+    grid-column: 1;
+    grid-row: 8;
   };
 }
 

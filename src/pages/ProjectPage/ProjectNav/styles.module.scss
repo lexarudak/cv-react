@@ -5,6 +5,10 @@
 
   grid-column: 1 / 3;
 
+  @include mediaMax('xs') {
+    grid-column: 1 / 2;
+  }
+
   .link,
   .name {
     cursor: pointer;
