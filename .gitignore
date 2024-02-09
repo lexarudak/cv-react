@@ -12,6 +12,7 @@ node_modules
 .vite
 coverage
 *.local
+s
 
 # Editor directories and files
 .vscode/*
