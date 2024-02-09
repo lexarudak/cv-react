@@ -1,0 +1,40 @@
+
+$default-border-color: #032f52;
+
+.section {
+  padding: 5px;
+  border: 1px solid $default-border-color;
+  border-radius: 5px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+}
+
+.item {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1.5fr 10fr 2fr 1fr;
+  grid-gap: 5px;
+  padding-block: 5px;
+  align-items: center;
+  border-bottom: 1px solid $default-border-color;
+  text-align: center;
+
+  &.overlay {
+    border: 0;
+    background: rgb(19, 30, 59);
+    box-shadow: 0 0 5px 2px $default-border-color;
+  }
+
+  &__title {
+    text-align: start;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(127, 191, 255);
+    border-radius: 20px;
+  }
+}

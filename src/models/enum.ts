@@ -2,6 +2,7 @@ export const enum RouteList {
   cv = '/',
   portfolio = '/portfolio',
   project = '/portfolio/:title',
+  dnd = 'dnd',
   notFound = '/404',
 }
 
