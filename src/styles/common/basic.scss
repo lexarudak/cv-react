@@ -54,3 +54,12 @@ html {
   align-items: center;
 }
 
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* для Firefox */
+html {
+    scrollbar-width: none;
+}
