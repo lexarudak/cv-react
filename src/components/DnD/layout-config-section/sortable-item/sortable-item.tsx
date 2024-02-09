@@ -3,8 +3,6 @@ import cn from 'classnames';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import classes from '../layout-config-section.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconName } from '@fortawesome/fontawesome-svg-core';
 import { SortableItemContext } from './sortable-context';
 import DragHandler from '../drag-handler';
 
@@ -66,9 +64,7 @@ const SortableItem: VFC<Props> = ({ item, onCheckboxChange, className }) => {
         <span className={classes.itemTitle}>{item.title}</span>
 
         <span>
-          <a href={item.link}>
-            <FontAwesomeIcon icon={['fas', 'pen-to-square' as IconName]} />
-          </a>
+          <a href={item.link}>0</a>
         </span>
 
         <span>
