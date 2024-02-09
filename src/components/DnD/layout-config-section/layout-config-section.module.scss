@@ -1,0 +1,60 @@
+
+$default-border-color: #032f52;
+
+.section {
+  padding: rem(base);
+  border: 1px solid $default-border-color;
+  border-radius: rem(x-small);
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+
+  // @include breakpoint($tablet_sm) {
+  //   padding: rem(medium);
+  // }
+
+  // @include breakpoint($tablet_lg) {
+  //   padding: rem(large);
+  // }
+}
+
+.drag-handler {
+  cursor: grab;
+  width: 30px;
+  height: 30px;
+
+  background-color: aqua;
+}
+
+.action-link {
+  font-size: rem(base);
+  color: inherit;
+}
+
+.item {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1.5fr 10fr 2fr 1fr;
+  grid-gap: rem(base);
+  padding-block: rem(base);
+  align-items: center;
+  border-bottom: 1px solid $default-border-color;
+  text-align: center;
+
+  &.overlay {
+    border: 0;
+    background: white;
+    box-shadow: 0 0 5px 2px $default-border-color;
+  }
+
+  &__title {
+    text-align: start;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+  }
+}
