@@ -1,1 +1,1 @@
-export { default } from "./layout-config-section";
+export { default } from './layout-config-section';

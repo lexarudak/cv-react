@@ -16,9 +16,7 @@ const DragHandler: VFC<Props> = ({ className }) => {
       {...attributes}
       {...listeners}
       ref={ref}
-    >
-      ---
-    </button>
+    ></button>
   );
 };
 
