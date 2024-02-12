@@ -67,9 +67,7 @@ const SortableItem: VFC<Props> = ({ item, onCheckboxChange, className }) => {
           <a href={item.link}>0</a>
         </span>
 
-        <span>
-          <DragHandler className={classes.dragHandler} />
-        </span>
+        <DragHandler className={classes.dragHandler} />
       </li>
     </SortableItemContext.Provider>
   );

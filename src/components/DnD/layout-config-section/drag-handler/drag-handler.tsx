@@ -9,14 +9,13 @@ const DragHandler: VFC<Props> = ({ className }) => {
   const { attributes, listeners, ref } = useContext(SortableItemContext);
 
   return (
-    <button
+    <div
       data-auto="drag-handler"
-      type="button"
       className={className}
       {...attributes}
       {...listeners}
       ref={ref}
-    ></button>
+    ></div>
   );
 };
 
